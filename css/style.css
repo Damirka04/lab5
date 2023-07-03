@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 3px solid 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-family: "montserrat";
+}
+.navbar .list {
+  list-style: none;
+  display: flex;
+  gap: 101px;
+  font-size: 30px;
+}
+.navbar li.vhod {
+  font-weight: bold;
+}
+
+.slider {
+  width: 1100px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.middle {
+  position: absolute;
+  top: 55%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+}
+
+.navigation {
+  position: absolute;
+  bottom: 16px;
+  left: 38%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar {
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.bar:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+input[name=r] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+
+.slide img {
+  width: 811px;
+  height: 542px;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -75%;
+}
+
+.bgfd {
+  width: 100%;
+  height: 1080px;
+  background-image: url(../img/bggl.png);
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.fpinfo {
+  display: flex;
+  justify-content: flex-start;
+}
+.fpinfo .textfp {
+  align-items: center;
+  margin-top: 230px;
+}
+.fpinfo .textfp .mivfactax p {
+  color: white;
+  font-size: 75px;
+  font-family: Montserrat;
+}
+.fpinfo .textfp .infofact p {
+  font-size: 30px;
+  color: white;
+  font-family: "montserrat";
+}
+
+.sp {
+  width: 100%;
+  height: 3113px;
+  background-image: url(../img/bggl2.png);
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.zagalovok {
+  text-align: center;
+  margin-top: 84px;
+}
+.zagalovok p {
+  color: black;
+  font-family: "montserrat";
+  font-size: 55px;
+}
+
+.fact-holder {
+  display: flex;
+  justify-content: space-between;
+}
+.fact-holder .fact {
+  width: 33%;
+  margin-top: 71px;
+}
+.fact-holder .fact .fact-img {
+  display: flex;
+  justify-content: center;
+}
+.fact-holder .fact .fact-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+}
+.fact-holder .fact p {
+  color: black;
+  font-size: 30px;
+  font-family: "montserrat";
+}
+
+.fact-holder2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 97px;
+}
+.fact-holder2 .fact {
+  width: 33%;
+  margin-top: 71px;
+}
+.fact-holder2 .fact .fact-img {
+  display: flex;
+  justify-content: center;
+}
+.fact-holder2 .fact .fact-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+}
+.fact-holder2 .fact p {
+  color: black;
+  font-size: 30px;
+  font-family: "montserrat";
+}
+
+.zagolovok2 {
+  margin-top: 194px;
+  align-items: flex-start;
+}
+.zagolovok2 p {
+  color: black;
+  font-size: 50px;
+  font-family: Montserrat;
+}
+
+.sponsori {
+  display: flex;
+  width: 100%;
+  margin-top: 97px;
+  align-items: center;
+  justify-content: space-between;
+}
+.sponsori img {
+  width: 200px;
+  height: 33.3333333333%;
+}
+
+.kontakti {
+  display: flex;
+  justify-content: space-between;
+}
+.kontakti .kontakti-info {
+  margin-top: 293px;
+}
+.kontakti .kontakti-info .kontakizagalovok p {
+  font-size: 55px;
+  color: black;
+  font-family: "montserrat";
+  font-size: 55px;
+  width: 400px;
+}
+.kontakti .kontakti-info .kontakti-text p {
+  margin-top: 27px;
+  font-size: 40px;
+  color: black;
+  font-family: "montserrat";
+}
+.kontakti .kontakti-img {
+  margin-top: 293px;
+}
+
+.adress {
+  display: flex;
+  justify-content: space-between;
+}
+.adress .adress-info {
+  margin-top: 245px;
+}
+.adress .adress-info .adresszagalovok p {
+  font-size: 55px;
+  color: black;
+  font-family: "montserrat";
+}
+.adress .adress-info .adress-text p {
+  margin-top: 27px;
+  font-size: 35px;
+  color: black;
+  font-family: "montserrat";
+  width: 100%;
+}
+.adress .adress-img {
+  margin-top: 255px;
+}
+
+.footerbg {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/footer.png);
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footerleft {
+  margin-top: 62px;
+}
+.footer .footerleft .footerzagalovok p {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "montserrat";
+  color: white;
+  width: 620px;
+}
+.footer .footerleft .social {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: space-between;
+  width: 316px;
+}
+.footer .konez {
+  margin-top: 100px;
+}
+.footer .konez p {
+  font-family: "montserrat";
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+}
+
+.footerright {
+  text-align: right;
+  margin-top: 200px;
+}
+.footerright .footerzagalovok2 p {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "montserrat";
+  color: white;
+}
+.footerright .konez2 {
+  margin-top: 37px;
+}
+.footerright .konez2 p {
+  font-size: 30px;
+  font-family: "montserrat";
+  color: white;
+}
+
+.spbg {
+  width: 100%;
+  height: 2160px;
+  background-image: url(../img/bgblog.png);
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.navbar-blog {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.navbar-blog a {
+  text-decoration: none;
+  font-family: "montserrat";
+  color: #3F93D2;
+}
+.navbar-blog .list {
+  list-style: none;
+  display: flex;
+  gap: 101px;
+  font-size: 30px;
+}
+.navbar-blog li.vhod {
+  font-weight: bold;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 123px;
+}
+
+.blog2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 41px;
+}
+
+.blog3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 41px;
+}
+
+.tpbg {
+  width: 100%;
+  height: 1640px;
+  background-image: url(../img//bgkatalog.png);
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.katalog-text {
+  justify-content: flex-start;
+  margin-top: 58px;
+}
+.katalog-text p {
+  color: black;
+  font-size: 100px;
+  font-family: Montserrat;
+}
+
+.katalog {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 41px;
+}
+
+.katalog2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 41px;
+}/*# sourceMappingURL=style.css.map */
